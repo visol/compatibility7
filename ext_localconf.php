@@ -65,7 +65,7 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('fluid_styled_c
         );
     }
     if (!class_exists('TYPO3\CMS\FluidStyledContent\ViewHelpers\Menu\MenuViewHelperTrait')) {
-        class_alias(
+        trait_exists(
             \TYPO3\CMS\Compatibility7\ViewHelpers\Menu\MenuViewHelperTrait::class,
             'TYPO3\CMS\FluidStyledContent\ViewHelpers\Menu\MenuViewHelperTrait'
         );
